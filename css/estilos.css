@@ -1,20 +1,102 @@
+:root{
+    --verde: #09C846; /*Este contiene toda la gama de colores a utilizar en el proyecto*/
+    --naranja: #f68a2b;
+    --cielo: #d8d8f2;
+    --azul: #260fbc;
+    --blanco: #ffffff;
+}
+
 body {
-    background-color: #92D8E0;
-    color: blue;
+    background-color: var(--cielo); /*url('../img/guarderia.jpg); -> Esta es una ruta para colocar una imagen de fondo, no un color*/
+    color: var(--azul);
+    margin: auto;
     }
-header{
+
+    header{
     background-color: green;
     }
+
+    header img{
+    width: 300px;
+    height: 200px;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20pt;
+}
+img{
+    max-width: 100%;
+}
+
+#Inicio{
+    text-align: center;
+}
+
+#Inicio img{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+.boton{
+    display: inline-block;
+    background-color: var(--naranja);
+    color: var(--azul);
+    padding: 12px 12px 12px 12px;
+    margin: 20px 0;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.boton:hover{
+    background-color: var(--cielo);
+    color: var(--verde);
+}
+
+article img{
+    border-radius: 15px;
+    height: 500px;
+}
+
+h1,h2,h3{
+    color: var(--verde);
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20pt;
+}
+
+#titulo{
+    font-size: 4rem;
+}
+
+article{
+    background-color: var(--blanco);
+    padding: 20px 100px;
+    margin: 30px;
+    border: 2px solid var(--verde);
+    border-radius: 15px;
+}
+
 p   {
     font-size: 20pt;
     }
-#Slogan{
-    color: red;
-    font-size: 30pt;
-    }
-.parrafo{
-    background-color: lightpink;
-}
+
 #Servicios article img{
     width: 300px;
     height: 300px;
